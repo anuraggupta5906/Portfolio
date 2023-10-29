@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  color: white;
+  background-color: transparent;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid #8230C1 ;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  
+  ;
+  color: white;
+}
+
+.contact-info-card{
+    background-image: url("Contact img/Rectangle 5518.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 872px;
+    height: 572px;
+}
+#about-card{
+    background-image: url("about img/Rectangle\ 5510.png");
+}
+.gradient-bg{
+    border-radius: 5px;
+background: linear-gradient(270deg, #1C1A1A 6.16%, rgba(68, 66, 66, 0.86) 55.16%);
+}
+
+    </style>
+</head>
+<body>
+    <div class="header flex flex-row justify-between px-10 py-3 items-center bg-neutral-900">
+        <div class="logo space-x-1.5 ">
+            <img class="h-auto w-14 inline-block" src="./images/ideogram 1.png">
+            <span class="font-bold text-2xl text-gray-400"><span class="text-cyan-500">Anurag </span>Gupta</span>
+        </div>
+       
+        <nav>
+            <ul class="flex gap-6 text-[#A59C9C]">
+                <li>About</li>
+                <li>Services</li>
+                <li>Projects</li>
+                <li>Contant Info</li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="wrapper bg-stone-950">
+       <div class=" mx-5">
+        <section class="container m-auto">
+        <div class="main flex flex-row">
+            <div class="hero bg-white/10 text-neutral-50 m-5 rounded-lg  ">
+                <p class="p-10 font-bold text-6xl leading-normal">Crafting Digital Experiences:<br><span class="text-yellow-500">Your Vision,</span><span class="text-indigo-500">Our Code.</span></p>
+                <div class="technologies flex gap-6 m-5 p-2 items-center justify-center ">
+                    <img  class="h-20"src="images/Rectangle 5506.png">
+                    <img  class="h-20"src="images/image 240.png">
+                    <img  class="h-20"src="images/image 241.png">
+                    <img  class="h-10"src="images/Vector.png">
+                    <img  class="h-20" src="images/652583_code_develop_html_language_layout_icon (1) 1.png">
+                    <img  class="h-20"src="images/image 242.png">
+                </div>
+                <p class="text-2xl font-bold leading-3 text-neutral-500 p-10 text-center">"Your imagination, our coding expertise-a perfect match"</p><br>
+            </div>
+            <div class="grow">
+            <div class="relative ">
+                <img class="h-auto absolute w-60 top-20 right-10 " src="images/652583_code_develop_html_language_layout_icon (1) 2.png">
+                <img class="h-auto absolute" src="images/Rectangle 5508.png">
+                <img class="h-auto absolute" src="images/image 243.png">
+            </div>
+
+            <div class="pics relative"> 
+                <img class="max-w-md max-h-96 mt-20 absolute top-1/2 right-1" src="images/learn-coding 1.png">
+            </div>
+        </div>
+        </div>
+    </section>
+        
+        <div class="h-20"></div>
+        <!-- ---------------------about section--------------------- -->
+        <section class="container m-auto" id="about-card">
+        <div class="about gap-5">
+            <div class="flex flex-row gap-8">
+                <img class="w-1/3 h-auto" src="about img/Rectangle 5511.png">
+                <div>
+            <div class="about-card bg-[#5E5E5E] rounded-xl h-fit ">
+                <h1 class="text-white font-bold text-5xl p-5">About Me</h1>
+                <p class="text-[#BEB9B9] p-5">Hello, I'm Anurag Gupta, a passionate Frontend Developer with a love for creating beautiful and user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I craft interactive and visually appealing websites that captivate users and drive engagement.<br/>
+                    Beyond my skills in frontend development, I also have a solid understanding of SQL, enabling me to build dynamic web applications with seamless database integration.
+                    If you're looking for a dedicated developer who can bring your web projects to life with creativity and precision, let's connect and discuss how I can contribute to your next endeavor.<br/>
+                    Let's build the web of tomorrow, today!
+                </p>
+            </div>
+            <br/>
+            <div>
+                <div class="tab">
+                    <button class="tablinks" onclick="opentab(event, 'skills')">Skills</button>
+                    <button class="tablinks" onclick="opentab(event, 'education')">Education</button>
+                    <button class="tablinks" onclick="opentab(event, 'experience')">Experience</button>
+                </div>
+                    <!-- Create the tab content -->
+                       <div id="skills" class="tabcontent">
+                           <h2 class="text-[#EA7E1B] text-xl font-semibold">UI/UX</h2>
+                           <p>Designing Web/App interaction</p>
+                           
+                           <h2 class="text-[#EA7E1B] text-xl font-semibold">Web Development</h2>
+                           <p>Designing Web/App interaction</p>
+                            
+                           <h2 class="text-[#EA7E1B] text-xl font-semibold">App Development</h2>
+                           <p>Building Ios / android app</p>
+                       </div>
+   
+                     <div id="education" class="tabcontent">
+                           <h2 class="text-[#EA7E1B] text-xl font-semibold">Education</h2>
+                           <p>This is the Education tab content.</p>
+                   </div>
+   
+                   <div id="experience" class="tabcontent">
+                           <h2 class="text-[#EA7E1B] text-xl font-semibold">Experience</h2>
+                           <p>This is the Experience tab content.</p>
+                   </div>
+           </div>
+                </div>
+            </div>
+            
+           
+            
+        </div>
+    </section>
+
+        <!-- --------------------------about section----------------------- -->
+
+                                 <!--   ***     -->
+
+        <!-- -------------------------services section-------------------- -->
+        <section class="Services container m-auto   ">
+            <h1 class="font-bold text-5xl text-white mx-20 mt-20 mb-14">My Services</h1>
+            <div class="flex flex-row justify-evenly flex-wrap">
+
+                <div class="service-card-1 rounded-lg bg-[#26584F] h-[278px] w-[317px] hover:bg-[#059669] hover:scale-110 transition ease-in duration-300">
+                    <img class="m-5 h-6 w-16" src="service img/_.png">
+                    <h2 class="font-bold text-2xl text-white mx-5">Web Design</h2>
+                    <p class="text-[#D6D6D6] mx-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cupiditate possimus ducimus dignissimos sunt accusantium facere eius reprehenderit voluptatum aut.</p>
+                    <a href="#" class="text-white cursor-pointer mx-5 relative bottom-0">Learn More</a>
+                </div>
+    
+                <div class="service-card-2 rounded-lg bg-[#26584F] h-[278px] w-[317px] hover:bg-[#059669] hover:scale-110 transition ease-in duration-300">
+                    <img class="m-5 h-10 w-10" src="service img/Frame.png">
+                    <h2 class="font-bold text-2xl text-white mx-5">UI/UX Design</h2>
+                    <p class="text-[#D6D6D6] mx-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cupiditate possimus ducimus dignissimos sunt accusantium facere eius reprehenderit voluptatum aut.</p>
+                    <a href="#" class="text-white cursor-pointer mx-5 relative bottom-0">Learn More</a>
+                </div>
+    
+                <div class="service-card-3 rounded-lg bg-[#26584F] h-[278px] w-[317px] hover:bg-[#059669] hover:scale-110 transition ease-in duration-300">
+                    <img class="m-5 h-10 w-10" src="service img/app-store.png">
+                    <h2 class="font-bold text-2xl text-white mx-5">App Design</h2>
+                    <p class="text-[#D6D6D6] mx-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cupiditate possimus ducimus dignissimos sunt accusantium facere eius reprehenderit voluptatum aut.</p>
+                    <a href="#" class="text-white cursor-pointer mx-5 relative bottom-0">Learn More</a>
+                </div>
+    
+    
+            </div>
+        </div>
+    </section>
+    <div class="h-52"></div>
+
+            <!-- ----------------contacts-------------------- -->
+    <section class="flex m-auto">
+        <img src="Contact img/People-with-smartphonesimg 1.png">
+        <div class="contact-info-card rounded-xl h-96 p-10">
+            <p class="text-white font-bold text-4xl">Stalk Me Here!?</p>
+                <div class="socia-media flex flex-row gap-10 flex-wrap mt-4">
+            
+                    <div class="insta flex flex-col items-center gap-2">
+                        <img src="Contact img/Frame.png">
+                        <p class="text-white font-semibold text-">@anuraggupta5906</p>
+                    </div>
+
+                    <div class="linkedin flex flex-col items-center gap-2">
+                        <img src="Contact img/Frame (1).png">
+                        <p class="text-white font-semibold">@anuraggupta5906</p>
+                    </div>
+
+                    <div class="github flex flex-col items-center gap-2">
+                        <img src="Contact img/Frame (2).png">
+                        <p class="text-white font-semibold">@anuraggupta5906</p>
+                    </div>
+
+                    <div class="twitter flex flex-col items-center">
+                        <img class="h-[89px]" src="Contact img/Frame (3).png">
+                        <p class="text-white font-semibold">@anuraggupta5906</p>
+                    </div>
+            
+                </div>
+
+                <div class="mail relative">
+                    <a href="#" class="cursor-pointer absolute">
+                        <img src="Contact img/icons8-gmail-40.png">
+                        <div class="gradient-bg w-72 py-2 text-center" >
+                        <p class="text-white bottom-1/3 right-full ">
+                            anuraggupta5906@gmail.com</p>
+                        </div>
+                    </a>
+                    <button class="bg-black text-white rounded-lg p-2">Contact Me</button>
+                </div>
+        
+        </div>
+
+    </section>
+        <!-- ----------------contacts---------------- -->
+
+
+    </div>
+    
+</div>
+    
+    <script>
+        function opentab(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>        
+    
+</body>
+</html>
+<!-- bg-[url('./service img/Rectangle 5517.png')] -->
